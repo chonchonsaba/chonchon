@@ -1,0 +1,2754 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://localhost/phpmyadmin/index.php?route=/database/sql&db=phpmyadmin -->
+<html lang="ja" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex,nofollow,notranslate">
+  <meta name="google" content="notranslate">
+  
+  <link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/codemirror.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/show-hint.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/lint.css">
+  <link rel="stylesheet" type="text/css" href="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/theme.css">
+  <title>localhost / 127.0.0.1 / phpmyadmin | phpMyAdmin 5.2.1</title>
+    <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery.min.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery-migrate.min.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/sprintf.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/ajax.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/keyhandler.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery-ui.min.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/name-conflict-fixes.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/bootstrap.bundle.min.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/js.cookie.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery.validate.min.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery-ui-timepicker-addon.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery.debounce-1.0.6.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/menu_resizer.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/cross_framing_protection.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/messages.php"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/config.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/doclinks.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/functions.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/navigation.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/indexes.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/common.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/page_settings.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/home.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/codemirror.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/sql.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/runmode.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/show-hint.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/sql-hint.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/lint.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/sql-lint.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/tracekit.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/error_report.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/drag_drop_import.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/shortcuts_handler.js.ダウンロード"></script>
+  <script data-cfasync="false" type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/console.js.ダウンロード"></script>
+
+<script data-cfasync="false" type="text/javascript">
+// <![CDATA[
+CommonParams.setAll({common_query:"lang=ja",opendb_url:"index.php?route=/database/structure&lang=ja",lang:"ja",server:"1",table:"",db:"",token:"76566e26544a5145385d6c7d70683736",text_dir:"ltr",LimitChars:"50",pftext:"",confirm:true,LoginCookieValidity:"1440",session_gc_maxlifetime:"1440",logged_in:true,is_https:false,rootPath:"/phpmyadmin/",arg_separator:"&",version:"5.2.1",auth_type:"config",user:"root"});
+var firstDayOfCalendar = '0';
+var themeImagePath = '.\/themes\/pmahomme\/img\/';
+var mysqlDocTemplate = '.\/url.php\u003Furl\u003Dhttps\u00253A\u00252F\u00252Fdev.mysql.com\u00252Fdoc\u00252Frefman\u00252F8.0\u00252Fen\u00252F\u002525s.html';
+var maxInputVars = 1000;
+
+if ($.datepicker) {
+  $.datepicker.regional[''].closeText = '\u6C7A\u5B9A';
+  $.datepicker.regional[''].prevText = '\u524D\u306E\u6708';
+  $.datepicker.regional[''].nextText = '\u6B21\u3078';
+  $.datepicker.regional[''].currentText = '\u4ECA\u65E5';
+  $.datepicker.regional[''].monthNames = [
+    '1\u0020\u6708',
+    '2\u0020\u6708',
+    '3\u0020\u6708',
+    '4\u0020\u6708',
+    '5\u0020\u6708',
+    '6\u0020\u6708',
+    '7\u0020\u6708',
+    '8\u0020\u6708',
+    '9\u0020\u6708',
+    '10\u0020\u6708',
+    '11\u0020\u6708',
+    '12\u0020\u6708',
+  ];
+  $.datepicker.regional[''].monthNamesShort = [
+    '1\u0020\u6708',
+    '2\u0020\u6708',
+    '3\u0020\u6708',
+    '4\u0020\u6708',
+    '5\u0020\u6708',
+    '6\u0020\u6708',
+    '7\u0020\u6708',
+    '8\u0020\u6708',
+    '9\u0020\u6708',
+    '10\u0020\u6708',
+    '11\u0020\u6708',
+    '12\u0020\u6708',
+  ];
+  $.datepicker.regional[''].dayNames = [
+    '\u65E5',
+    '\u6708',
+    '\u706B',
+    '\u6C34',
+    '\u6728',
+    '\u91D1',
+    '\u571F',
+  ];
+  $.datepicker.regional[''].dayNamesShort = [
+    '\u65E5',
+    '\u6708',
+    '\u706B',
+    '\u6C34',
+    '\u6728',
+    '\u91D1',
+    '\u571F',
+  ];
+  $.datepicker.regional[''].dayNamesMin = [
+    '\u65E5',
+    '\u6708',
+    '\u706B',
+    '\u6C34',
+    '\u6728',
+    '\u91D1',
+    '\u571F',
+  ];
+  $.datepicker.regional[''].weekHeader = '\u9031';
+  $.datepicker.regional[''].showMonthAfterYear = true;
+  $.datepicker.regional[''].yearSuffix = '\u306A\u3057';
+  $.extend($.datepicker._defaults, $.datepicker.regional['']);
+}
+
+if ($.timepicker) {
+  $.timepicker.regional[''].timeText = '\u6642\u9593';
+  $.timepicker.regional[''].hourText = '\u6642';
+  $.timepicker.regional[''].minuteText = '\u5206';
+  $.timepicker.regional[''].secondText = '\u79D2';
+  $.extend($.timepicker._defaults, $.timepicker.regional['']);
+}
+
+function extendingValidatorMessages () {
+  $.extend($.validator.messages, {
+    required: '\u3053\u306E\u30D5\u30A3\u30FC\u30EB\u30C9\u306F\u5FC5\u9808\u3067\u3059',
+    remote: '\u3053\u306E\u9805\u76EE\u3092\u4FEE\u6B63\u3057\u3066\u304F\u3060\u3055\u3044',
+    email: '\u6709\u52B9\u306A\u30E1\u30FC\u30EB\u30A2\u30C9\u30EC\u30B9\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    url: '\u6709\u52B9\u306AURL\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    date: '\u6709\u52B9\u306A\u65E5\u4ED8\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    dateISO: '\u6709\u52B9\u306A\u65E5\u4ED8\u0028ISO\u6E96\u62E0\u0029\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    number: '\u6709\u52B9\u306A\u6570\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    creditcard: '\u6709\u52B9\u306A\u30AF\u30EC\u30B8\u30C3\u30C8\u30AB\u30FC\u30C9\u756A\u53F7\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    digits: '\u6570\u5B57\u306E\u307F\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    equalTo: '\u540C\u3058\u5024\u3092\u3082\u3046\u4E00\u5EA6\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044',
+    maxlength: $.validator.format('\u007B0\u007D\u6587\u5B57\u4EE5\u4E0A\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    minlength: $.validator.format('\u5C11\u306A\u304F\u3068\u3082\u0020\u007B0\u007D\u6587\u5B57\u4EE5\u4E0A\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    rangelength: $.validator.format('\u007B0\u007D\u0020\u304B\u3089\u0020\u007B1\u007D\u0020\u306E\u9593\u306E\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    range: $.validator.format('\u007B0\u007D\u0020\u304B\u3089\u0020\u007B1\u007D\u0020\u306E\u9593\u306E\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    max: $.validator.format('\u007B0\u007D\u0020\u4EE5\u4E0B\u306E\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    min: $.validator.format('\u007B0\u007D\u0020\u4EE5\u4E0A\u306E\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    validationFunctionForDateTime: $.validator.format('\u6709\u52B9\u306A\u65E5\u4ED8\u307E\u305F\u306F\u6642\u523B\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    validationFunctionForHex: $.validator.format('\u6709\u52B9\u306A\u002016\u0020\u9032\u6570\u306E\u5024\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044'),
+    validationFunctionForMd5: $.validator.format('\u3053\u306E\u30AB\u30E9\u30E0\u306B\u002032\u0020\u6587\u5B57\u306E\u5024\u3092\u5165\u308C\u308B\u3053\u3068\u306F\u3067\u304D\u307E\u305B\u3093'),
+    validationFunctionForAesDesEncrypt: $.validator.format('\u3053\u308C\u3089\u306E\u95A2\u6570\u306F\u30D0\u30A4\u30CA\u30EA\u306E\u7D50\u679C\u3092\u8FD4\u3057\u307E\u3059\u3002\u4E00\u8CAB\u6027\u306E\u306A\u3044\u7D50\u679C\u306B\u306A\u3089\u306A\u3044\u3088\u3046\u3001\u3053\u306E\u5024\u306F\u0020BINARY,\u0020VARBINARY,\u0020BLOB\u0020\u306E\u3044\u305A\u308C\u304B\u306E\u30AB\u30E9\u30E0\u306B\u683C\u7D0D\u3057\u3066\u304F\u3060\u3055\u3044\u3002')
+  });
+}
+
+ConsoleEnterExecutes=false
+
+AJAX.scriptHandler
+  .add('vendor/jquery/jquery.min.js', 0)
+  .add('vendor/jquery/jquery-migrate.min.js', 0)
+  .add('vendor/sprintf.js', 1)
+  .add('ajax.js', 0)
+  .add('keyhandler.js', 1)
+  .add('vendor/jquery/jquery-ui.min.js', 0)
+  .add('name-conflict-fixes.js', 1)
+  .add('vendor/bootstrap/bootstrap.bundle.min.js', 1)
+  .add('vendor/js.cookie.js', 1)
+  .add('vendor/jquery/jquery.validate.min.js', 0)
+  .add('vendor/jquery/jquery-ui-timepicker-addon.js', 0)
+  .add('vendor/jquery/jquery.debounce-1.0.6.js', 0)
+  .add('menu_resizer.js', 1)
+  .add('cross_framing_protection.js', 0)
+  .add('messages.php', 0)
+  .add('config.js', 1)
+  .add('doclinks.js', 1)
+  .add('functions.js', 1)
+  .add('navigation.js', 1)
+  .add('indexes.js', 1)
+  .add('common.js', 1)
+  .add('page_settings.js', 1)
+  .add('home.js', 1)
+  .add('vendor/codemirror/lib/codemirror.js', 0)
+  .add('vendor/codemirror/mode/sql/sql.js', 0)
+  .add('vendor/codemirror/addon/runmode/runmode.js', 0)
+  .add('vendor/codemirror/addon/hint/show-hint.js', 0)
+  .add('vendor/codemirror/addon/hint/sql-hint.js', 0)
+  .add('vendor/codemirror/addon/lint/lint.js', 0)
+  .add('codemirror/addon/lint/sql-lint.js', 0)
+  .add('vendor/tracekit.js', 1)
+  .add('error_report.js', 1)
+  .add('drag_drop_import.js', 1)
+  .add('shortcuts_handler.js', 1)
+  .add('console.js', 1)
+;
+$(function() {
+        AJAX.fireOnload('vendor/sprintf.js');
+        AJAX.fireOnload('keyhandler.js');
+        AJAX.fireOnload('name-conflict-fixes.js');
+      AJAX.fireOnload('vendor/bootstrap/bootstrap.bundle.min.js');
+      AJAX.fireOnload('vendor/js.cookie.js');
+            AJAX.fireOnload('menu_resizer.js');
+          AJAX.fireOnload('config.js');
+      AJAX.fireOnload('doclinks.js');
+      AJAX.fireOnload('functions.js');
+      AJAX.fireOnload('navigation.js');
+      AJAX.fireOnload('indexes.js');
+      AJAX.fireOnload('common.js');
+      AJAX.fireOnload('page_settings.js');
+      AJAX.fireOnload('home.js');
+                    AJAX.fireOnload('vendor/tracekit.js');
+      AJAX.fireOnload('error_report.js');
+      AJAX.fireOnload('drag_drop_import.js');
+      AJAX.fireOnload('shortcuts_handler.js');
+      AJAX.fireOnload('console.js');
+  });
+// ]]>
+</script>
+
+  <noscript><style>html{display:block}</style></noscript>
+<script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/structure.js.ダウンロード"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/change.js.ダウンロード"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/jquery.uitablefilter.js.ダウンロード"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/operations.js.ダウンロード"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/makegrid.js.ダウンロード"></script><script type="text/javascript" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/sql(1).js.ダウンロード"></script></head>
+<body style="margin-left: 0px; margin-bottom: 20.6125px; padding-top: 59.375px;">
+    <div id="pma_navigation" class="d-print-none" data-config-navigation-width="240" style="width: 0px;">
+    <div id="pma_navigation_resizer" style="width: 3px; left: 0px;"></div>
+    <div id="pma_navigation_collapser" title="パネルを表示" style="left: 3px;">→</div>
+    <div id="pma_navigation_content">
+      <div id="pma_navigation_header">
+
+                  <div id="pmalogo">
+                          <a href="http://localhost/phpmyadmin/index.php?lang=ja">
+                                      <img id="imgpmalogo" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/logo_left.png" alt="phpMyAdmin">
+                                      </a>
+                      </div>
+        
+        <div id="navipanellinks">
+          <a href="http://localhost/phpmyadmin/index.php?route=/&amp;lang=ja" title="メインページ"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="メインページ" alt="メインページ" class="icon ic_b_home"></a>
+
+                      <a class="logout disableAjax" href="http://localhost/phpmyadmin/index.php?route=/logout&amp;lang=ja" title="空のセッション データ"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="空のセッション データ" alt="空のセッション データ" class="icon ic_s_loggoff"></a>
+          
+          <a href="http://localhost/phpmyadmin/doc/html/index.html" title="phpMyAdmin のドキュメント" target="_blank" rel="noopener noreferrer"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="phpMyAdmin のドキュメント" alt="phpMyAdmin のドキュメント" class="icon ic_b_docs"></a>
+
+          <a href="http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fmariadb.com%2Fkb%2Fen%2Fdocumentation%2F" title="MariaDB ドキュメント" target="_blank" rel="noopener noreferrer"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="MariaDB ドキュメント" alt="MariaDB ドキュメント" class="icon ic_b_sqlhelp"></a>
+
+          <a id="pma_navigation_settings_icon" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#" title="ナビゲーションパネル設定"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ナビゲーションパネル設定" alt="ナビゲーションパネル設定" class="icon ic_s_cog"></a>
+
+          <a id="pma_navigation_reload" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#" title="ナビゲーションパネルの再読み込み"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ナビゲーションパネルの再読み込み" alt="ナビゲーションパネルの再読み込み" class="icon ic_s_reload"></a>
+        </div>
+
+        
+        <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="読み込み中…" alt="読み込み中…" style="visibility: hidden; display:none" class="icon ic_ajax_clock_small throbber">
+      </div>
+      <div id="pma_navigation_tree" class="list_container synced highlight autoexpand" style="height: 586.275px;">
+  <div class="pma_quick_warp">
+    <div class="drop_list"><button title="最近使用したテーブル" class="drop_button btn">最近</button><ul id="pma_recent_list"><li class="warp_link">
+            最近使用したテーブルはありません。    </li>
+</ul></div>    <div class="drop_list"><button title="お気に入りのテーブル" class="drop_button btn">お気に入り</button><ul id="pma_favorite_list"><li class="warp_link">
+            お気に入りのテーブルはありません。    </li>
+</ul></div>    <div class="clearfloat"></div>
+</div>
+
+
+<div class="clearfloat"></div>
+
+<ul>
+  
+  <!-- CONTROLS START -->
+<li id="navigation_controls_outer">
+    <div id="navigation_controls">
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#" id="pma_navigation_collapse" title="すべて折りたたむ"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="すべて折りたたむ" alt="すべて折りたたむ" class="icon ic_s_collapseall"></a>
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#" id="pma_navigation_sync" title="メインパネルのリンクを解除"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="メインパネルのリンクを解除" alt="メインパネルのリンクを解除" class="icon ic_s_link"></a>
+    </div>
+</li>
+<!-- CONTROLS ENDS -->
+
+</ul>
+
+
+
+<div id="pma_navigation_tree_content" style="height: 427.762px;">
+  <ul>
+      <li class="first new_database italics">
+    <div class="block">
+      <i class="first"></i>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/server/databases"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="新規作成" alt="新規作成" class="icon ic_b_newdb"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/server/databases" title="新規作成">新規作成</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-vpath="cm9vdA==.aW5mb3JtYXRpb25fc2NoZW1h" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=information_schema"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="データベース操作" alt="データベース操作" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=information_schema" title="構造">information_schema</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.bXlzcWw=" data-vpath="cm9vdA==.bXlzcWw=" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=mysql"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="データベース操作" alt="データベース操作" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=mysql" title="構造">mysql</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-vpath="cm9vdA==.cGVyZm9ybWFuY2Vfc2NoZW1h" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=performance_schema"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="データベース操作" alt="データベース操作" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=performance_schema" title="構造">performance_schema</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="database selected">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander loaded" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="" alt="" class="icon ic_b_minus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=phpmyadmin"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="データベース操作" alt="データベース操作" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=phpmyadmin" title="構造">phpmyadmin</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+  <div class="list_container">
+    <ul>
+  <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+
+  <li class="new_table italics new_table italics">
+    <div class="block">
+      <i></i>
+              <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/create&amp;db=phpmyadmin"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="新規作成" alt="新規作成" class="icon ic_b_table_add"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/table/create&amp;db=phpmyadmin" title="新規作成">新規作成</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19ib29rbWFyaw==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19ib29rbWFyaw==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__bookmark"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__bookmark" title="表示">pma__bookmark</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__bookmark&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19jZW50cmFsX2NvbHVtbnM=" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19jZW50cmFsX2NvbHVtbnM=" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__central_columns"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__central_columns" title="表示">pma__central_columns</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__central_columns&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19jb2x1bW5faW5mbw==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19jb2x1bW5faW5mbw==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__column_info"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__column_info" title="表示">pma__column_info</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__column_info&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19kZXNpZ25lcl9zZXR0aW5ncw==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19kZXNpZ25lcl9zZXR0aW5ncw==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__designer_settings"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__designer_settings" title="表示">pma__designer_settings</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__designer_settings&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19leHBvcnRfdGVtcGxhdGVz" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19leHBvcnRfdGVtcGxhdGVz" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__export_templates"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__export_templates" title="表示">pma__export_templates</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__export_templates&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19mYXZvcml0ZQ==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19mYXZvcml0ZQ==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__favorite"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__favorite" title="表示">pma__favorite</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__favorite&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19oaXN0b3J5" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19oaXN0b3J5" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__history"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__history" title="表示">pma__history</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__history&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19uYXZpZ2F0aW9uaGlkaW5n" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19uYXZpZ2F0aW9uaGlkaW5n" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__navigationhiding"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__navigationhiding" title="表示">pma__navigationhiding</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__navigationhiding&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19wZGZfcGFnZXM=" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19wZGZfcGFnZXM=" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__pdf_pages"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__pdf_pages" title="表示">pma__pdf_pages</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__pdf_pages&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19yZWNlbnQ=" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19yZWNlbnQ=" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__recent"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__recent" title="表示">pma__recent</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__recent&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19yZWxhdGlvbg==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19yZWxhdGlvbg==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__relation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__relation" title="表示">pma__relation</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__relation&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX19zYXZlZHNlYXJjaGVz" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX19zYXZlZHNlYXJjaGVz" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__savedsearches"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__savedsearches" title="表示">pma__savedsearches</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__savedsearches&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX190YWJsZV9jb29yZHM=" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX190YWJsZV9jb29yZHM=" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__table_coords"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__table_coords" title="表示">pma__table_coords</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__table_coords&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX190YWJsZV9pbmZv" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX190YWJsZV9pbmZv" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__table_info"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__table_info" title="表示">pma__table_info</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__table_info&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX190YWJsZV91aXByZWZz" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX190YWJsZV91aXByZWZz" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__table_uiprefs"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__table_uiprefs" title="表示">pma__table_uiprefs</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__table_uiprefs&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX190cmFja2luZw==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX190cmFja2luZw==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__tracking"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__tracking" title="表示">pma__tracking</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__tracking&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX191c2VyY29uZmln" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX191c2VyY29uZmln" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__userconfig"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__userconfig" title="表示">pma__userconfig</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__userconfig&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table nav_node_table">
+    <div class="block">
+      <i></i>
+              <b></b>
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX191c2VyZ3JvdXBz" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX191c2VyZ3JvdXBz" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__usergroups"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__usergroups" title="表示">pma__usergroups</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__usergroups&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+  <li class="nav_node_table last nav_node_table">
+    <div class="block">
+      <i></i>
+              
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.cGhwbXlhZG1pbg==.dGFibGVz.cG1hX191c2Vycw==" data-vpath="cm9vdA==.cGhwbXlhZG1pbg==.44OG44O844OW44Or.cG1hX191c2Vycw==" data-pos="0"></span>
+                      <span class="hide pos2_nav" data-name="tables" data-value="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/table/structure&amp;db=phpmyadmin&amp;table=pma__users"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/sql&amp;pos=0&amp;db=phpmyadmin&amp;table=pma__users" title="表示">pma__users</a>
+          
+    <span class="navItemControls"><a href="http://localhost/phpmyadmin/index.php?route=/navigation" data-post="hideNavItem=1&amp;itemType=table&amp;itemName=pma__users&amp;dbName=phpmyadmin" class="hideNavItem ajax"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="隠す" alt="隠す" class="icon ic_hide"></a></span>
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+
+
+
+    </ul>
+  </div>
+
+  </li>
+  <li class="last database">
+    <div class="block">
+      <i></i>
+              
+        <a class="expander" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#">
+          <span class="hide paths_nav" data-apath="cm9vdA==.dGVzdA==" data-vpath="cm9vdA==.dGVzdA==" data-pos="0"></span>
+                    <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="展開/折りたたみ" alt="展開/折りたたみ" class="icon ic_b_plus">
+        </a>
+          </div>
+    
+          <div class="block second">
+                  <a href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=test"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="データベース操作" alt="データベース操作" class="icon ic_s_db"></a>
+              </div>
+
+              <a class="hover_show_full" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=test" title="構造">test</a>
+          
+    
+
+    
+    <div class="clearfloat"></div>
+
+
+
+  </li>
+
+  </ul>
+</div>
+
+
+</div>
+
+      <div id="pma_navi_settings_container">
+                  
+              </div>
+    </div>
+
+          <div class="pma_drop_handler">
+        ここにファイルをドロップします      </div>
+      <div class="pma_sql_import_status">
+        <h2>
+          SQL アップロード          ( <span class="pma_import_count">0</span> )
+          <span class="close">x</span>
+          <span class="minimize">-</span>
+        </h2>
+        <div></div>
+      </div>
+      </div>
+  <div class="modal fade" id="unhideNavItemModal" tabindex="-1" aria-labelledby="unhideNavItemModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="unhideNavItemModalLabel">隠されたナビゲーションツリー項目を表示します。</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="modal fade" id="createViewModal" tabindex="-1" aria-labelledby="createViewModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" id="createViewModalDialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="createViewModalLabel">ビューを作成する</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+      </div>
+      <div class="modal-body"></div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="createViewModalGoButton">実行</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+  
+
+  
+      
+  
+      <div id="floating_menubar" class="d-print-none" style="margin-left: 3px; left: 0px; position: fixed; top: 0px; width: 100%; z-index: 99;">
+<nav id="server-breadcrumb" aria-label="breadcrumb">
+  <ol class="breadcrumb breadcrumb-navbar">
+    <li class="breadcrumb-item">
+      <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="" alt="" class="icon ic_s_host">
+      <a href="http://localhost/phpmyadmin/index.php?route=/" data-raw-text="127.0.0.1" draggable="false">
+        サーバ：        127.0.0.1
+      </a>
+    </li>
+
+          <li class="breadcrumb-item">
+        <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="" alt="" class="icon ic_s_db">
+        <a href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=phpmyadmin" data-raw-text="phpmyadmin" draggable="false">
+          データベース:          phpmyadmin
+        </a>
+      </li>
+
+            </ol>
+</nav>
+<div id="topmenucontainer" class="menucontainer">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="ナビゲーションの切り替え" aria-controls="navbarNav" aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" style="width: auto; overflow: visible;">
+      <ul id="topmenu" class="navbar-nav">
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="構造" alt="構造" class="icon ic_b_props">&nbsp;構造
+                          </a>
+          </li>
+                  <li class="nav-item active">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="SQL" alt="SQL" class="icon ic_b_sql">&nbsp;SQL
+                              <span class="visually-hidden">（現在）</span>
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/search&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="検索" alt="検索" class="icon ic_b_search">&nbsp;検索
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/multi-table-query&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="クエリ" alt="クエリ" class="icon ic_s_db">&nbsp;クエリ
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/export&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="エクスポート" alt="エクスポート" class="icon ic_b_export">&nbsp;エクスポート
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/import&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="インポート" alt="インポート" class="icon ic_b_import">&nbsp;インポート
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/operations&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="操作" alt="操作" class="icon ic_b_tblops">&nbsp;操作
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/server/privileges&amp;db=phpmyadmin&amp;checkprivsdb=phpmyadmin&amp;viewing_mode=db">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="権限" alt="権限" class="icon ic_s_rights">&nbsp;権限
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/routines&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ルーチン" alt="ルーチン" class="icon ic_b_routines">&nbsp;ルーチン
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/events&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="イベント" alt="イベント" class="icon ic_b_events">&nbsp;イベント
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/triggers&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="トリガ" alt="トリガ" class="icon ic_b_triggers">&nbsp;トリガ
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/tracking&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="SQL コマンドの追跡" alt="SQL コマンドの追跡" class="icon ic_eye">&nbsp;SQL コマンドの追跡
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/designer&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デザイナ" alt="デザイナ" class="icon ic_b_relations">&nbsp;デザイナ
+                          </a>
+          </li>
+                  <li class="nav-item">
+            <a class="nav-link text-nowrap" href="http://localhost/phpmyadmin/index.php?route=/database/central-columns&amp;db=phpmyadmin">
+              <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="主要カラム" alt="主要カラム" class="icon ic_centralColumns">&nbsp;主要カラム
+                          </a>
+          </li>
+              <li class="nav-item dropdown d-none" style=""><a href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img alt="" title="" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" class="icon ic_b_more">その他</a><ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown"></ul></li></ul>
+    </div>
+  </nav>
+</div>
+</div>
+
+
+
+    <span id="page_nav_icons" class="d-print-none">
+      <span id="lock_page_icon"><img alt="あなたがこのページに変更を加えた場合、変更を破棄する前に確認画面が表示されるでしょう" title="あなたがこのページに変更を加えた場合、変更を破棄する前に確認画面が表示されるでしょう" src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" class="icon ic_s_lock"></span>
+      <span id="page_settings_icon" style="display: inline;">
+        <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ページ関連の設定" alt="ページ関連の設定" class="icon ic_s_cog">
+      </span>
+      <a id="goto_pagetop" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="バーをクリックしてページ上部にスクロール" alt="バーをクリックしてページ上部にスクロール" class="icon ic_s_top"></a>
+    </span>
+  
+  <div id="pma_console_container" class="d-print-none">
+    <div id="pma_console" style="margin-left: 3px;">
+                <div class="toolbar collapsed">
+                    <div class="switch_button console_switch">
+            <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="SQL クエリコンソール" alt="SQL クエリコンソール" class="icon ic_console">
+            <span>コンソール</span>
+        </div>
+                            <div class="button clear">
+            
+            <span>クリア</span>
+        </div>
+                            <div class="button history">
+            
+            <span>履歴</span>
+        </div>
+                            <div class="button options">
+            
+            <span>オプション</span>
+        </div>
+                            <div class="button bookmarks">
+            
+            <span>ブックマーク</span>
+        </div>
+                            <div class="button debug hide">
+            
+            <span>SQL のデバッグ</span>
+        </div>
+            </div>
+                <div class="content" style="height: 98.048px; margin-bottom: -98.0375px; display: none;">
+            <div class="console_message_container">
+                <div class="message welcome binded">
+                    <span id="instructions-0">
+                        クエリを実行するには、Ctrl キーを押しながら Enter キーを押します                    </span>
+                    <span class="hide" id="instructions-1">
+                        Enterキーを押してクエリを実行する                    </span>
+                </div>
+                            </div><!-- console_message_container -->
+            <div class="query_input">
+                <span class="console_query_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap" translate="no" style="clip-path: inset(0px);"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -16px; border-right-width: 34px; min-height: 20px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 19.6875px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="height: 54px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+            </div>
+        </div><!-- message end -->
+                <div class="mid_layer"></div>
+                <div class="card ungrouped" id="debug_console">
+            <div class="toolbar ">
+                    <div class="button order order_asc active">
+            
+            <span>昇順</span>
+        </div>
+                            <div class="button order order_desc">
+            
+            <span>降順</span>
+        </div>
+                            <div class="text">
+            
+            <span>順序:</span>
+        </div>
+                            <div class="switch_button">
+            
+            <span>SQL のデバッグ</span>
+        </div>
+                            <div class="button order_by sort_count">
+            
+            <span>カウント</span>
+        </div>
+                            <div class="button order_by sort_exec active">
+            
+            <span>実行順</span>
+        </div>
+                            <div class="button order_by sort_time">
+            
+            <span>所要時間</span>
+        </div>
+                            <div class="text">
+            
+            <span>並び順:</span>
+        </div>
+                            <div class="button group_queries">
+            
+            <span>グループ クエリ</span>
+        </div>
+                            <div class="button ungroup_queries">
+            
+            <span>クエリのクループを解除</span>
+        </div>
+            </div>
+            <div class="content debug" style="height: 98.048px;">
+                <div class="message welcome binded">SQL デバッグ情報を取得中にいくつかのエラーが発生しました。</div>
+                <div class="debugLog"></div>
+            </div> <!-- Content -->
+            <div class="templates">
+                <div class="debug_query action_content">
+                    <span class="action collapse">
+            折りたたむ
+                    </span>
+                            <span class="action expand">
+            展開
+                    </span>
+                            <span class="action dbg_show_trace">
+            トレースを表示
+                    </span>
+                            <span class="action dbg_hide_trace">
+            トレースを非表示
+                    </span>
+                            <span class="text count hide">
+            カウント
+                            : <span></span>
+                    </span>
+                            <span class="text time">
+            所要時間
+                            : <span></span>
+                    </span>
+            </div>
+            </div> <!-- Template -->
+        </div> <!-- Debug SQL card -->
+                    <div class="card" id="pma_bookmarks">
+                <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>ブックマーク</span>
+        </div>
+                            <div class="button refresh">
+            
+            <span>更新</span>
+        </div>
+                            <div class="button add">
+            
+            <span>追加</span>
+        </div>
+            </div>
+                <div class="content bookmark" style="height: 98.048px;">
+                    <div class="message welcome binded">
+    <span>ブックマークはありません</span>
+</div>
+
+                </div>
+                <div class="mid_layer"></div>
+                <div class="card add">
+                    <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>ブックマークを追加</span>
+        </div>
+            </div>
+                    <div class="content add_bookmark" style="height: 100.8px;">
+                        <div class="options">
+                            <label>
+                                ラベル: <input type="text" name="label">
+                            </label>
+                            <label>
+                                対象先のデータベース: <input type="text" name="targetdb">
+                            </label>
+                            <label>
+                                <input type="checkbox" name="shared">ブックマークを共有                            </label>
+                            <button class="btn btn-primary" type="submit" name="submit">OK</button>
+                        </div> <!-- options -->
+                        <div class="query_input">
+                            <span class="bookmark_add_input"><div class="CodeMirror cm-s-pma CodeMirror-wrap" translate="no" style="clip-path: inset(0px);"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 16px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 16px; margin-bottom: -16px; border-right-width: 34px; min-height: 20px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 0px; top: 0px; height: 19.6875px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 20px;"></div><div class="CodeMirror-gutters" style="height: 54px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div></div></span>
+                        </div>
+                    </div>
+                </div> <!-- Add bookmark card -->
+            </div> <!-- Bookmarks card -->
+                        <div class="card" id="pma_console_options">
+            <div class="toolbar ">
+                    <div class="switch_button">
+            
+            <span>オプション</span>
+        </div>
+                            <div class="button default">
+            
+            <span>デフォルトに設定</span>
+        </div>
+            </div>
+            <div class="content" style="height: 100.8px;">
+                <label>
+                    <input type="checkbox" name="always_expand">クエリメッセージを常に展開する                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="start_history">開始時にクエリ履歴を表示                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="current_query">現在のクエリを表示                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="enter_executes">
+                        Enterでクエリを実行し、Shift+Enterで新しい行を挿入します。永続的にするには、設定を確認してください。                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="dark_theme">暗いテーマに切り替える                </label>
+                <br>
+            </div>
+        </div> <!-- Options card -->
+        <div class="templates">
+                        <div class="query_actions">
+                    <span class="action collapse">
+            折りたたむ
+                    </span>
+                            <span class="action expand">
+            展開
+                    </span>
+                            <span class="action requery">
+            再クエリ
+                    </span>
+                            <span class="action edit">
+            編集
+                    </span>
+                            <span class="action explain">
+            EXPLAIN
+                    </span>
+                            <span class="action profiling">
+            プロファイリング
+                    </span>
+                            <span class="action bookmark">
+            ブックマーク
+                    </span>
+                            <span class="text failed">
+            問い合わせ失敗
+                    </span>
+                            <span class="text targetdb">
+            データベース
+                            : <span></span>
+                    </span>
+                            <span class="text query_time">
+            問い合わせた時間
+                            : <span></span>
+                    </span>
+            </div>
+        </div>
+    </div> <!-- #console end -->
+</div> <!-- #console_container end -->
+
+
+  <div id="page_content"><div id="page_settings_modal"><div class="page_settings"><form method="post" action="http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fsql&amp;db=phpmyadmin&amp;server=1" class="config-form disableAjax">
+  <input type="hidden" name="tab_hash" value="">
+      <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="">
+    <input type="hidden" name="token" value="76566e26544a5145385d6c7d70683736">
+  <input type="hidden" name="submit_save" value="Sql">
+
+  <ul class="nav nav-tabs" id="configFormDisplayTab" role="tablist">
+          <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="Sql_queries-tab" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Sql_queries" data-bs-toggle="tab" role="tab" aria-controls="Sql_queries" aria-selected="true">SQL クエリ</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Sql_box-tab" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Sql_box" data-bs-toggle="tab" role="tab" aria-controls="Sql_box" aria-selected="false">SQL クエリボックス</a>
+      </li>
+      </ul>
+  <div class="tab-content">
+          <div class="tab-pane fade show active" id="Sql_queries" role="tabpanel" aria-labelledby="Sql_queries-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">SQL クエリ</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">SQL クエリの設定。</h6>
+            
+            <fieldset class="optbox">
+              <legend>SQL クエリ</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="ShowSQL">SQL クエリを表示する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowSQL" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>phpMyAdmin によって生成される SQL クエリを表示するかどうかを定義します。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="ShowSQL" id="ShowSQL" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#ShowSQL" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="Confirm">DROP クエリの確認</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_Confirm" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>データを失う作業をしようとしたとき、「本当に実行しますか?…」という警告を出すかどうか。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="Confirm" id="Confirm" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Confirm" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="QueryHistoryMax">クエリ履歴の長さ</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_QueryHistoryMax" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>履歴に残るクエリの件数。</small>
+      </th>
+
+  <td>
+          <input type="number" name="QueryHistoryMax" id="QueryHistoryMax" value="25" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#QueryHistoryMax" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="IgnoreMultiSubmitErrors">マルチクエリのエラーを無視する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_IgnoreMultiSubmitErrors" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>有効にした場合、クエリの 1 つが失敗しても phpMyAdmin はマルチクエリの実行を続けます。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="IgnoreMultiSubmitErrors" id="IgnoreMultiSubmitErrors">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#IgnoreMultiSubmitErrors" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="MaxCharactersInDisplayedSQL">表示できる SQL 文の最大の長さ</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_MaxCharactersInDisplayedSQL" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>SQL クエリが表示されているときに使用される文字の最大数。</small>
+      </th>
+
+  <td>
+          <input type="number" name="MaxCharactersInDisplayedSQL" id="MaxCharactersInDisplayedSQL" value="1000" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#MaxCharactersInDisplayedSQL" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="RetainQueryBox">クエリボックスを保持する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_RetainQueryBox" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>送信後もクエリボックスを画面上に残しておくかどうかを定義します。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="RetainQueryBox" id="RetainQueryBox">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#RetainQueryBox" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="CodemirrorEnable">CodeMirror を有効にする</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_CodemirrorEnable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>SQL クエリの編集に、構文の強調や行番号表示があるユーザフレンドリなエディタ (CodeMirror) を使用します。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="CodemirrorEnable" id="CodemirrorEnable" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#CodemirrorEnable" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="LintEnable">SQL 検証を有効にする</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_LintEnable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>実行前にクエリのエラーを検出します。コードミラーを有効化する必要があります。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="LintEnable" id="LintEnable" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#LintEnable" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="EnableAutocompleteForTablesAndColumns">テーブル名とカラム名のオートコンプリートを有効にする</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_EnableAutocompleteForTablesAndColumns" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>SQLクエリ内のテーブル名とカラム名のオートコンプリート。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="EnableAutocompleteForTablesAndColumns" id="EnableAutocompleteForTablesAndColumns" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#EnableAutocompleteForTablesAndColumns" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="DefaultForeignKeyChecks">外部キーのチェック</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_DefaultForeignKeyChecks" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>クエリ実行時の外部キーのチェックボックスのデフォルト値です。</small>
+      </th>
+
+  <td>
+          <select name="DefaultForeignKeyChecks" id="DefaultForeignKeyChecks" class="w-75">
+                            <option value="default" selected="">サーバのデフォルト</option>
+                            <option value="enable">有効</option>
+                            <option value="disable">無効</option>
+              </select>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#DefaultForeignKeyChecks" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Sql_box" role="tabpanel" aria-labelledby="Sql_box-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">SQL クエリボックス</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">SQL クエリボックスに表示されるリンクの詳細設定。</h6>
+            
+            <fieldset class="optbox">
+              <legend>SQL クエリボックス</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="SQLQuery-Edit">編集</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_Edit" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="SQLQuery-Edit" id="SQLQuery-Edit" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#SQLQuery-Edit" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="SQLQuery-Explain">EXPLAIN で確認</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_Explain" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="SQLQuery-Explain" id="SQLQuery-Explain" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#SQLQuery-Explain" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="SQLQuery-ShowAsPHP">PHP コードの作成</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_ShowAsPHP" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="SQLQuery-ShowAsPHP" id="SQLQuery-ShowAsPHP" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#SQLQuery-ShowAsPHP" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="SQLQuery-Refresh">更新</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_SQLQuery_Refresh" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="SQLQuery-Refresh" id="SQLQuery-Refresh" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#SQLQuery-Refresh" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+      </div>
+</form>
+
+<script type="text/javascript">
+  if (typeof configInlineParams === 'undefined' || !Array.isArray(configInlineParams)) {
+    configInlineParams = [];
+  }
+  configInlineParams.push(function () {
+    registerFieldValidator('QueryHistoryMax', 'validatePositiveNumber', true);
+registerFieldValidator('QueryHistoryMax', 'validateUpperBound', true, ['25']);
+registerFieldValidator('MaxCharactersInDisplayedSQL', 'validatePositiveNumber', true);
+
+    $.extend(Messages, {
+      'error_nan_p': '\u6B63\u306E\u5024\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u0021',
+      'error_nan_nneg': '\u8CA0\u3067\u306A\u3044\u5024\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u0021',
+      'error_incorrect_port': '\u6709\u52B9\u306A\u30DD\u30FC\u30C8\u756A\u53F7\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u0021',
+      'error_invalid_value': '\u4E0D\u6B63\u306A\u5024\u3067\u3059\u0021',
+      'error_value_lte': '\u5024\u306F\u0020\u0025s\u0020\u4EE5\u4E0B\u3067\u306A\u3051\u308C\u3070\u3044\u3051\u307E\u305B\u3093\u0021',
+    });
+
+    $.extend(defaultValues, {
+      'ShowSQL': true,
+      'Confirm': true,
+      'QueryHistoryMax': '25',
+      'IgnoreMultiSubmitErrors': false,
+      'MaxCharactersInDisplayedSQL': '1000',
+      'RetainQueryBox': false,
+      'CodemirrorEnable': true,
+      'LintEnable': true,
+      'EnableAutocompleteForTablesAndColumns': true,
+      'DefaultForeignKeyChecks': ['default'],
+      'SQLQuery-Edit': true,
+      'SQLQuery-Explain': true,
+      'SQLQuery-ShowAsPHP': true,
+      'SQLQuery-Refresh': true
+    });
+  });
+  if (typeof configScriptLoaded !== 'undefined' && configInlineParams) {
+    loadInlineConfig();
+  }
+</script>
+</div></div><form method="post" action="http://localhost/phpmyadmin/index.php?route=/import" class="ajax lock-page" id="sqlqueryform" name="sqlform" enctype="multipart/form-data">
+  <input type="hidden" name="db" value="phpmyadmin"><input type="hidden" name="token" value="76566e26544a5145385d6c7d70683736">
+  <input type="hidden" name="is_js_confirmed" value="0">
+  <input type="hidden" name="pos" value="0">
+  <input type="hidden" name="goto" value="index.php?route=/database/sql">
+  <input type="hidden" name="message_to_show" value="SQL は正常に実行されました。">
+  <input type="hidden" name="prev_sql_query" value="">
+
+      <a id="querybox"></a>
+
+    <div class="card mb-3">
+      <div class="card-header">データベース <a href="http://localhost/phpmyadmin/index.php?route=/database/structure&amp;db=phpmyadmin">phpmyadmin</a> 上でクエリを実行する: <a href="http://localhost/phpmyadmin/url.php?url=https%3A%2F%2Fdev.mysql.com%2Fdoc%2Frefman%2F8.0%2Fen%2Fselect.html" target="mysql_doc"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a></div>
+      <div class="card-body">
+        <div id="queryfieldscontainer">
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <textarea class="form-control" tabindex="100" name="sql_query" id="sqlquery" cols="40" rows="15" data-textarea-auto-select="false" aria-label="実行した SQL" style="display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-wrap ui-resizable" translate="no" style="clip-path: inset(0px); resize: vertical;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 50px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="100" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; min-height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 46px; margin-bottom: -15px; border-right-width: 35px; min-height: 165px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like"><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>1</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 19.6875px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">CREATE</span> <span class="cm-keyword">TABLE</span> requests<span class="cm-bracket">(</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  id <span class="cm-type">INT</span> <span class="cm-keyword">AUTO_INCREMENT</span> <span class="cm-keyword">PRIMARY</span> <span class="cm-keyword">KEY</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  company <span class="cm-type">VARCHAR</span><span class="cm-bracket">(</span><span class="cm-number">255</span><span class="cm-bracket">)</span> <span class="cm-keyword">NOT</span> <span class="cm-atom">NULL</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  requirements <span class="cm-type">TEXT</span> <span class="cm-keyword">NOT</span> <span class="cm-atom">NULL</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  phone <span class="cm-type">VARCHAR</span><span class="cm-bracket">(</span><span class="cm-number">20</span><span class="cm-bracket">)</span> <span class="cm-keyword">NOT</span> <span class="cm-atom">NULL</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  email <span class="cm-type">VARCHAR</span><span class="cm-bracket">(</span><span class="cm-number">255</span><span class="cm-bracket">)</span> <span class="cm-keyword">NOT</span> <span class="cm-atom">NULL</span><span class="cm-punctuation">,</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  created_at <span class="cm-type">TIMESTAMP</span> <span class="cm-keyword">DEFAULT</span> <span class="cm-keyword">CURRENT_TIMESTAMP</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -46px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-bracket">)</span><span class="cm-punctuation">;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 35px; width: 1px; border-bottom: 0px solid transparent; top: 165px;"></div><div class="CodeMirror-gutters" style="height: 200px; left: 1.9e-06px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div></div>
+              </div>
+              <div id="querymessage"></div>
+
+              <div class="btn-toolbar" role="toolbar">
+                
+                <div class="btn-group me-2" role="group">
+                  <input type="button" value="クリア" id="clear" class="btn btn-secondary button sqlbutton">
+                                      <input type="button" value="フォーマット" id="format" class="btn btn-secondary button sqlbutton">
+                                  </div>
+
+                <input type="button" value="自動保存されたクエリを取得" id="saved" class="btn btn-secondary button sqlbutton">
+              </div>
+
+              <div class="my-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" name="parameterized" id="parameterized">
+                  <label class="form-check-label" for="parameterized">
+                    パラメータのバインド                    <a href="http://localhost/phpmyadmin/doc/html/faq.html#faq6-40" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+                  </label>
+                </div>
+              </div>
+              <div class="mb-3" id="parametersDiv"></div>
+            </div>
+
+                      </div>
+        </div>
+
+                  <div class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-6">
+              <label class="form-label" for="bkm_label">この SQL をブックマーク:</label>
+            </div>
+            <div class="col-6">
+              <input class="form-control" type="text" name="bkm_label" id="bkm_label" tabindex="110" value="">
+            </div>
+
+            <div class="col-12">
+              <div class="form-check form-check-inline" style="display: none;">
+                <input class="form-check-input" type="checkbox" name="bkm_all_users" tabindex="111" id="id_bkm_all_users" value="true">
+                <label class="form-check-label" for="id_bkm_all_users">すべてのユーザがこのブックマークを利用できるようにする</label>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="form-check form-check-inline" style="display: none;">
+                <input class="form-check-input" type="checkbox" name="bkm_replace" tabindex="112" id="id_bkm_replace" value="true">
+                <label class="form-check-label" for="id_bkm_replace">同名のブックマークは差し替える</label>
+              </div>
+            </div>
+          </div>
+              </div>
+      <div class="card-footer">
+        <div class="row row-cols-lg-auto g-3 align-items-center">
+          <div class="col-12">
+            <div class="input-group me-2">
+              <span class="input-group-text">デリミタ</span>
+              <label class="visually-hidden" for="id_sql_delimiter">デリミタ</label>
+              <input class="form-control" type="text" name="sql_delimiter" tabindex="131" size="3" value=";" id="id_sql_delimiter">
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="show_query" value="1" id="checkbox_show_query" tabindex="132">
+              <label class="form-check-label" for="checkbox_show_query">実行したクエリをここに表示する</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="retain_query_box" value="1" id="retain_query_box" tabindex="133">
+              <label class="form-check-label" for="retain_query_box">クエリボックスを保持する</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="rollback_query" value="1" id="rollback_query" tabindex="134">
+              <label class="form-check-label" for="rollback_query">完了した後、ロールバック</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input type="hidden" name="fk_checks" value="0">
+              <input class="form-check-input" type="checkbox" name="fk_checks" id="fk_checks" value="1" checked="">
+              <label class="form-check-label" for="fk_checks">外部キーのチェックを有効にする</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <input class="btn btn-primary ms-1" type="submit" id="button_submit_query" name="SQL" tabindex="200" value="実行">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+      <div class="card mb-3">
+      <div class="card-body">
+        <ul>
+    <li>
+        <input type="radio" name="knjenc" value="" checked="checked" id="kj-none">
+        <label for="kj-none">
+                        なし        </label>
+        <input type="radio" name="knjenc" value="EUC-JP" id="kj-euc">
+        <label for="kj-euc">EUC</label>
+        <input type="radio" name="knjenc" value="SJIS" id="kj-sjis">
+        <label for="kj-sjis">SJIS</label>
+    </li>
+    <li>
+        <input type="checkbox" name="xkana" value="kana" id="kj-kana">
+        <label for="kj-kana">
+                        全角カナに変換する        </label>
+    </li>
+</ul>
+      </div>
+    </div>
+  <button class="btn btn-secondary" id="togglequerybox" style="display: none;">クエリボックスを隠す</button></form>
+
+<div id="sqlqueryresultsouter"></div>
+
+<div class="modal fade" id="simulateDmlModal" tabindex="-1" aria-labelledby="simulateDmlModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="simulateDmlModalLabel">クエリをシミュレート</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+      <div id="selflink" class="d-print-none">
+      <a href="http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fsql&amp;db=phpmyadmin&amp;server=1" title="別ウィンドウで開く" target="_blank" rel="noopener noreferrer">
+                  <img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="別ウィンドウで開く" alt="別ウィンドウで開く" class="icon ic_window-new">
+              </a>
+    </div>
+  
+  
+
+  
+
+
+
+  
+  
+  
+
+<div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog-buttons ui-draggable ui-resizable" aria-describedby="pma_navigation_settings" aria-labelledby="ui-id-1" style="position: fixed; height: auto; width: 700px; top: 25.4375px; left: 406.5px;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">ページ関連の設定</span><button type="button" class="ui-dialog-titlebar-close btn-close"></button></div><div id="pma_navigation_settings" class="ui-dialog-content ui-widget-content" style="display: block; width: auto; min-height: 136.1px; max-height: 590.325px; height: auto;"><div class="page_settings"><form method="post" action="http://localhost/phpmyadmin/index.php?route=%2Fdatabase%2Fsql&amp;db=phpmyadmin&amp;server=1" class="config-form disableAjax">
+  <input type="hidden" name="tab_hash" value="">
+      <input type="hidden" name="check_page_refresh" id="check_page_refresh" value="1">
+    <input type="hidden" name="lang" value="ja"><input type="hidden" name="token" value="76566e26544a5145385d6c7d70683736">
+  <input type="hidden" name="submit_save" value="Navi">
+
+  <ul class="nav nav-tabs" id="configFormDisplayTab" role="tablist">
+          <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="Navi_panel-tab" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Navi_panel" data-bs-toggle="tab" role="tab" aria-controls="Navi_panel" aria-selected="true">ナビゲーションパネル</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_tree-tab" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Navi_tree" data-bs-toggle="tab" role="tab" aria-controls="Navi_tree" aria-selected="false" tabindex="-1">ナビゲーションツリー</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_servers-tab" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Navi_servers" data-bs-toggle="tab" role="tab" aria-controls="Navi_servers" aria-selected="false" tabindex="-1">サーバ</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_databases-tab" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Navi_databases" data-bs-toggle="tab" role="tab" aria-controls="Navi_databases" aria-selected="false" tabindex="-1">データベース</a>
+      </li>
+          <li class="nav-item" role="presentation">
+        <a class="nav-link" id="Navi_tables-tab" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#Navi_tables" data-bs-toggle="tab" role="tab" aria-controls="Navi_tables" aria-selected="false" tabindex="-1">テーブル</a>
+      </li>
+      </ul>
+  <div class="tab-content">
+          <div class="tab-pane fade show active" id="Navi_panel" role="tabpanel" aria-labelledby="Navi_panel-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">ナビゲーションパネル</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">ナビゲーションパネルの外観をカスタマイズ。</h6>
+            
+            <fieldset class="optbox">
+              <legend>ナビゲーションパネル</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="ShowDatabasesNavigationAsTree">データベースナビゲーションをツリーとして表示する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_ShowDatabasesNavigationAsTree" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションパネル内のデータベースツリーをセレクタで置き換えます</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="ShowDatabasesNavigationAsTree" id="ShowDatabasesNavigationAsTree" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#ShowDatabasesNavigationAsTree" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationLinkWithMainPanel">メインパネルへのリンク</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLinkWithMainPanel" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>現在のデータベースまたはテーブルを強調表示してメインパネルとリンクします。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationLinkWithMainPanel" id="NavigationLinkWithMainPanel" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationLinkWithMainPanel" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationDisplayLogo">ロゴを表示する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayLogo" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションパネル内にロゴを表示します。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationDisplayLogo" id="NavigationDisplayLogo" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationDisplayLogo" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationLogoLink">ロゴのリンク URL</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLink" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションパネルのロゴが指す URL。</small>
+      </th>
+
+  <td>
+          <input type="text" name="NavigationLogoLink" id="NavigationLogoLink" value="index.php" class="w-75">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationLogoLink" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationLogoLinkWindow">ロゴリンクのターゲット</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationLogoLinkWindow" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>リンク先のページをメイン ウィンドウ (<code>main</code>) または新しいウィンドウ (<code>new</code>) で開く。</small>
+      </th>
+
+  <td>
+          <select name="NavigationLogoLinkWindow" id="NavigationLogoLinkWindow" class="w-75">
+                            <option value="main" selected="">main</option>
+                            <option value="new">new</option>
+              </select>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationLogoLinkWindow" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreePointerEnable">強調表示を有効にする</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreePointerEnable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>マウスカーソルの下のサーバ名を強調表示します。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreePointerEnable" id="NavigationTreePointerEnable" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreePointerEnable" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="FirstLevelNavigationItems">最初のレベルで最大項目数</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_FirstLevelNavigationItems" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーの最初のレベルの各ページに表示できる項目の数。</small>
+      </th>
+
+  <td>
+          <input type="number" name="FirstLevelNavigationItems" id="FirstLevelNavigationItems" value="100" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#FirstLevelNavigationItems" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeDisplayItemFilterMinimum">項目表示数を絞るための入力欄が現れる最小の項目数</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayItemFilterMinimum" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>入力欄を表示します (テーブル、ビュー、ルーチンおよびイベント) の項目の最小数を定義します。</small>
+      </th>
+
+  <td>
+          <input type="number" name="NavigationTreeDisplayItemFilterMinimum" id="NavigationTreeDisplayItemFilterMinimum" value="30" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeDisplayItemFilterMinimum" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NumRecentTables">最近使用したテーブル</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumRecentTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>最近使用したテーブルの最大数。0 で無効になります。</small>
+      </th>
+
+  <td>
+          <input type="number" name="NumRecentTables" id="NumRecentTables" value="10" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NumRecentTables" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NumFavoriteTables">お気に入りのテーブル</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NumFavoriteTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>お気に入りのテーブルの最大数。0 で無効になります。</small>
+      </th>
+
+  <td>
+          <input type="number" name="NumFavoriteTables" id="NumFavoriteTables" value="10" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NumFavoriteTables" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationWidth">ナビゲーションパネル幅</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationWidth" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションパネルを折りたたむには、0に設定します。</small>
+      </th>
+
+  <td>
+          <input type="number" name="NavigationWidth" id="NavigationWidth" value="240" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationWidth" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_tree" role="tabpanel" aria-labelledby="Navi_tree-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">ナビゲーションツリー</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">ナビゲーションツリーをカスタマイズ。</h6>
+            
+            <fieldset class="optbox">
+              <legend>ナビゲーションツリー</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="MaxNavigationItems">項目の最大数</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_MaxNavigationItems" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーの各ページに表示できる項目数。</small>
+      </th>
+
+  <td>
+          <input type="number" name="MaxNavigationItems" id="MaxNavigationItems" value="50" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#MaxNavigationItems" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeEnableGrouping">ツリー内項目をグループ化</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableGrouping" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーの項目をグループ化します（上のデータベースタブとテーブルタブで定義されている区切り記号によって決まります）。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeEnableGrouping" id="NavigationTreeEnableGrouping" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeEnableGrouping" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeEnableExpansion">ナビゲーションツリーの展開を有効にします</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeEnableExpansion" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションパネルでツリー展開の設定。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeEnableExpansion" id="NavigationTreeEnableExpansion" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeEnableExpansion" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowTables">ツリーでテーブルを表示</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowTables" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーのデータベース下のテーブルを表示</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowTables" id="NavigationTreeShowTables" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeShowTables" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowViews">ツリーでビューを表示</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowViews" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーのデータベース下のビューを表示</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowViews" id="NavigationTreeShowViews" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeShowViews" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowFunctions">ツリーで関数を表示</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowFunctions" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーのデータベース下の関数を表示するかどうか</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowFunctions" id="NavigationTreeShowFunctions" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeShowFunctions" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowProcedures">ツリーでプロシージャを表示</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowProcedures" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーのデータベース下のプロシージャを表示するかどうか</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowProcedures" id="NavigationTreeShowProcedures" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeShowProcedures" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeShowEvents">ツリーでイベントを表示</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeShowEvents" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーのデータベース下のイベントを表示</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeShowEvents" id="NavigationTreeShowEvents" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeShowEvents" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeAutoexpandSingleDb">１つのデータベースを展開する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeAutoexpandSingleDb" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションツリーで１つデータベースを自動的に展開するかどうか。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationTreeAutoexpandSingleDb" id="NavigationTreeAutoexpandSingleDb" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeAutoexpandSingleDb" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_servers" role="tabpanel" aria-labelledby="Navi_servers-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">サーバ</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">サーバの表示オプション。</h6>
+            
+            <fieldset class="optbox">
+              <legend>サーバ</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="NavigationDisplayServers">サーバ選択を表示する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationDisplayServers" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ナビゲーションパネルの上部にサーバ選択を表示します。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="NavigationDisplayServers" id="NavigationDisplayServers" checked="">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationDisplayServers" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="DisplayServersList">サーバをリストで表示する</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_DisplayServersList" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>サーバの一覧をドロップダウンの代わりにリストで表示します。</small>
+      </th>
+
+  <td>
+          <span class="checkbox">
+        <input type="checkbox" name="DisplayServersList" id="DisplayServersList">
+      </span>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#DisplayServersList" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_databases" role="tabpanel" aria-labelledby="Navi_databases-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">データベース</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">データベースの表示オプション。</h6>
+            
+            <fieldset class="optbox">
+              <legend>データベース</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="NavigationTreeDisplayDbFilterMinimum">データベース表示数を絞るための入力欄が現れる最小のデータベース数</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDisplayDbFilterMinimum" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <input type="number" name="NavigationTreeDisplayDbFilterMinimum" id="NavigationTreeDisplayDbFilterMinimum" value="30" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeDisplayDbFilterMinimum" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeDbSeparator">データベースツリーの区切り</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDbSeparator" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ツリーレベルにデータベースを区切るための文字列。</small>
+      </th>
+
+  <td>
+                <input type="text" size="25" name="NavigationTreeDbSeparator" id="NavigationTreeDbSeparator" value="_" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeDbSeparator" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+          <div class="tab-pane fade" id="Navi_tables" role="tabpanel" aria-labelledby="Navi_tables-tab">
+        <div class="card border-top-0">
+          <div class="card-body">
+            <h5 class="card-title visually-hidden">テーブル</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">テーブル表示オプション.</h6>
+            
+            <fieldset class="optbox">
+              <legend>テーブル</legend>
+
+                            
+              <table class="table table-borderless">
+                <tbody><tr>
+  <th>
+    <label for="NavigationTreeDefaultTabTable">クイックアクセスアイコンのリンク先</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <select name="NavigationTreeDefaultTabTable" id="NavigationTreeDefaultTabTable" class="w-75">
+                            <option value="structure" selected="">構造</option>
+                            <option value="sql">SQL</option>
+                            <option value="search">検索</option>
+                            <option value="insert">挿入</option>
+                            <option value="browse">表示</option>
+              </select>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeDefaultTabTable" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeDefaultTabTable2">2番目のクイックアクセスアイコンのリンク先</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeDefaultTabTable2" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <select name="NavigationTreeDefaultTabTable2" id="NavigationTreeDefaultTabTable2" class="w-75">
+                            <option value="" selected=""></option>
+                            <option value="structure">構造</option>
+                            <option value="sql">SQL</option>
+                            <option value="search">検索</option>
+                            <option value="insert">挿入</option>
+                            <option value="browse">表示</option>
+              </select>
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeDefaultTabTable2" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeTableSeparator">テーブルツリーの区切り</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableSeparator" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+          <small>ツリーレベルにテーブルを区切るための文字列。</small>
+      </th>
+
+  <td>
+                <input type="text" size="25" name="NavigationTreeTableSeparator" id="NavigationTreeTableSeparator" value="__" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeTableSeparator" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+<tr>
+  <th>
+    <label for="NavigationTreeTableLevel">テーブルツリーの最大の深さ</label>
+
+          <span class="doc">
+        <a href="http://localhost/phpmyadmin/doc/html/config.html#cfg_NavigationTreeTableLevel" target="documentation"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="ドキュメント" alt="ドキュメント" class="icon ic_b_help"></a>
+      </span>
+    
+    
+      </th>
+
+  <td>
+          <input type="number" name="NavigationTreeTableLevel" id="NavigationTreeTableLevel" value="1" class="">
+    
+    
+    
+          <a class="restore-default hide" href="http://localhost/phpmyadmin/index.php?route=/database/sql&amp;db=phpmyadmin#NavigationTreeTableLevel" title="デフォルト値に戻す" style="display: inline-block; opacity: 0.25;"><img src="./localhost _ 127.0.0.1 _ phpmyadmin _ phpMyAdmin 5.2.1_files/dot.gif" title="デフォルト値に戻す" alt="デフォルト値に戻す" class="icon ic_s_reload" style="display: none;"></a>
+    
+          </td>
+
+  </tr>
+
+              </tbody></table>
+            </fieldset>
+          </div>
+
+                  </div>
+      </div>
+      </div>
+</form>
+
+<script type="text/javascript">
+  if (typeof configInlineParams === 'undefined' || !Array.isArray(configInlineParams)) {
+    configInlineParams = [];
+  }
+  configInlineParams.push(function () {
+    registerFieldValidator('FirstLevelNavigationItems', 'validatePositiveNumber', true);
+registerFieldValidator('NavigationTreeDisplayItemFilterMinimum', 'validatePositiveNumber', true);
+registerFieldValidator('NumRecentTables', 'validateNonNegativeNumber', true);
+registerFieldValidator('NumFavoriteTables', 'validateNonNegativeNumber', true);
+registerFieldValidator('NavigationWidth', 'validateNonNegativeNumber', true);
+registerFieldValidator('MaxNavigationItems', 'validatePositiveNumber', true);
+registerFieldValidator('NavigationTreeTableLevel', 'validatePositiveNumber', true);
+
+    $.extend(Messages, {
+      'error_nan_p': '\u6B63\u306E\u5024\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u0021',
+      'error_nan_nneg': '\u8CA0\u3067\u306A\u3044\u5024\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u0021',
+      'error_incorrect_port': '\u6709\u52B9\u306A\u30DD\u30FC\u30C8\u756A\u53F7\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u0021',
+      'error_invalid_value': '\u4E0D\u6B63\u306A\u5024\u3067\u3059\u0021',
+      'error_value_lte': '\u5024\u306F\u0020\u0025s\u0020\u4EE5\u4E0B\u3067\u306A\u3051\u308C\u3070\u3044\u3051\u307E\u305B\u3093\u0021',
+    });
+
+    $.extend(defaultValues, {
+      'ShowDatabasesNavigationAsTree': true,
+      'NavigationLinkWithMainPanel': true,
+      'NavigationDisplayLogo': true,
+      'NavigationLogoLink': 'index.php',
+      'NavigationLogoLinkWindow': ['main'],
+      'NavigationTreePointerEnable': true,
+      'FirstLevelNavigationItems': '100',
+      'NavigationTreeDisplayItemFilterMinimum': '30',
+      'NumRecentTables': '10',
+      'NumFavoriteTables': '10',
+      'NavigationWidth': '240',
+      'MaxNavigationItems': '50',
+      'NavigationTreeEnableGrouping': true,
+      'NavigationTreeEnableExpansion': true,
+      'NavigationTreeShowTables': true,
+      'NavigationTreeShowViews': true,
+      'NavigationTreeShowFunctions': true,
+      'NavigationTreeShowProcedures': true,
+      'NavigationTreeShowEvents': true,
+      'NavigationTreeAutoexpandSingleDb': true,
+      'NavigationDisplayServers': true,
+      'DisplayServersList': false,
+      'NavigationTreeDisplayDbFilterMinimum': '30',
+      'NavigationTreeDbSeparator': '_',
+      'NavigationTreeDefaultTabTable': ['structure'],
+      'NavigationTreeDefaultTabTable2': [''],
+      'NavigationTreeTableSeparator': '__',
+      'NavigationTreeTableLevel': '1'
+    });
+  });
+  if (typeof configScriptLoaded !== 'undefined' && configInlineParams) {
+    loadInlineConfig();
+  }
+</script>
+</div></div><div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix"><div class="ui-dialog-buttonset"><button type="button" class="btn btn-primary">適用</button><button type="button" class="btn btn-secondary">キャンセル</button></div></div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div class="ui-widget-overlay ui-front" style="z-index: 800;"></div></body></html>

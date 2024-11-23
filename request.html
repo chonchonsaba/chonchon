@@ -12,7 +12,8 @@
     </header>
 
     <main>
-        <form id="request-form" method="post" action="submit_request.php">
+        <!-- method="get"を使い、mailtoで直接メール送信 -->
+        <form id="request-form" method="get" action="mailto:ich527inc@gmail.com">
             <label for="company">依頼主（依頼する会社）:</label>
             <input type="text" id="company" name="company" required><br><br>
 
@@ -35,3 +36,4 @@
     </footer>
 </body>
 </html>
+
