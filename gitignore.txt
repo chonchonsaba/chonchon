@@ -1,0 +1,7 @@
+AppData/
+*.DAT
+*.ini
+*.7z
+.vscode/
+node_modules/
+.DS_Store
